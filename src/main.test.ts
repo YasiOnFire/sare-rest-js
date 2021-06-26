@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { SareClient } from './main'
 import { ERROR_MESSAGES } from './types/errors.enum';
 
