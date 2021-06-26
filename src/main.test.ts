@@ -2,8 +2,8 @@ import 'dotenv/config'
 import { SareClient } from './main'
 import { ERROR_MESSAGES } from './types/errors.enum';
 
-const { UID, API_KEY } = process.env
-console.log('UID, API_KEY: ', UID, API_KEY);
+const API_KEY = process.env.API_KEY as string
+const UID = process.env.UID as string
 
 describe('CORE TESTS', () => {
   it('SareClient should be defined', () => {
