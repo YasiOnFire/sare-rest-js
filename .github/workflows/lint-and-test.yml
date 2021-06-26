@@ -18,6 +18,7 @@ jobs:
       env:
         API_KEY: '${{ secrets.API_KEY }}'
         UID: '${{ secrets.UID }}'
+    - run: printenv
     - run: yarn install
     - run: yarn add -D esbuild
     - run: yarn test
