@@ -17,6 +17,7 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: ${{ matrix.nodejs }}
+      env:
         API_KEY: ${{ secrets.API_KEY }}
         UID: ${{ secrets.UID }}
 
