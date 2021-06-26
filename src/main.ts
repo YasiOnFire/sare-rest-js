@@ -16,7 +16,7 @@ export class SareClient {
   
   constructor(opts: SareClientOptions) {
     if (!isApiKey(opts.apiKey)) throw new Error(ERROR_MESSAGES.INAVALID_API_KEY_FORMAT)
-    if (!isUID(opts.uid)) throw new Error(opts.uid)
+    if (!isUID(opts.uid)) throw new Error(ERROR_MESSAGES.INAVALID_UID_FORMAT)
     
     this._apiKey = opts.apiKey
     this._uid = opts.uid
