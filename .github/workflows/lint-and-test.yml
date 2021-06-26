@@ -1,7 +1,4 @@
 name: Lint and test
-env:
-  API_KEY: '${{ secrets.API_KEY }}'
-  UID: '${{ secrets.UID }}'
 
 on: [push, pull_request]
 
@@ -14,10 +11,12 @@ jobs:
         nodejs: [14, 16]
     steps:
     - uses: actions/checkout@v2
-    - env:
+    - name: Dump runner context
+      env:
         API_KEY: '${{ secrets.API_KEY }}'
         UID: '${{ secrets.UID }}'
-    - run: echo "$API_KEY"
+      run: echo "$API_KEY"
+
     # https://github.com/actions/setup-node
     - uses: actions/setup-node@v2-beta
       with:
