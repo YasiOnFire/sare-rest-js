@@ -16,13 +16,13 @@ or include from cdn:
 <script src="https://cdn.sareapps.pl/sare-rest.min.js">
 ```
 ### Methods
-- addOrUpdateEmail(payload: AddEmailDTO): Promise<any>
+- [addOrUpdateEmail](https://yasionfire.github.io/sare-rest-js/classes/main.sareclient.html#addorupdateemail)(payload: [AddEmailDTO](https://yasionfire.github.io/sare-rest-js/interfaces/types_add_email_dto.addemaildto.html)): Promise<any>
   - Adds/Updates email and props to SARE account
-- getEmailData(email: string): Promise<any>
+- [getEmailData](https://yasionfire.github.io/sare-rest-js/classes/main.sareclient.html#getemaildata)(email: string): Promise<any>
   - Retrieve email data from db
 
 ## Documentation
-- 
+- [https://yasionfire.github.io/sare-rest-js/](https://yasionfire.github.io/sare-rest-js/)
 
 ## Usage
 
