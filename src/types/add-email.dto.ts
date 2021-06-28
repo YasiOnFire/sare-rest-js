@@ -52,14 +52,26 @@ export interface Email {
    * group numbers to add/move to
    */
   groups?: number[]
+  /**
+   * Email name
+   */
   name?: string
   /**
    * Used to assign different communication scenarios
    * @see https://sare.pl/baza-wiedzy/2017/04/04/do-czego-sluza-scenariusze-subskrypcji/
    */
   interface?: number
+  /**
+   * Type of email to use in campaigns
+   */
   mail_type?: ["text" | "HTML", ("text" | "HTML")?]
+  /**
+   * Email comment
+   */
   comment?: string
+  /**
+   * Base email prop values
+   */
   prop?: {
     prop1?: string
     prop2?: string
@@ -72,6 +84,7 @@ export interface Email {
     prop9?: string
   }
   /**
+   * Custom email prop values
    * @see https://sare.pl/baza-wiedzy/2018/03/15/personalizacja/
    */
   prop_cust?: Record<string, unknown>
