@@ -1,6 +1,6 @@
 {
   "name": "sare-rest-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SARE Rest API - JavaScript Wrapper",
   "author": "Yasio <baszczok@yasio.pl>",
   "repository": "https://github.com/YasiOnFire/sare-rest-js",
@@ -12,7 +12,7 @@
     "javascript",
     "api"
   ],
-  "main": "./dist/tsc/main.js",
+  "main": "./dist/esbuild/main.js",
   "types": "./dist/tsc/main.d.ts",
   "browser": "./dist/esbuild/sare-rest.min.js",
   "scripts": {

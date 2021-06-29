@@ -1,4 +1,4 @@
-# SARE Rest API - JavaScript Wrapper
+# SARE API - JavaScript Client
 
 ## Installation
 ```bash
@@ -16,9 +16,10 @@ or include from cdn:
 <script src="https://cdn.sareapps.pl/sare-rest.min.js">
 ```
 ### Methods
-- [addOrUpdateEmail](https://yasionfire.github.io/sare-rest-js/classes/main.sareclient.html#addorupdateemail)(payload: [AddEmailDTO](https://yasionfire.github.io/sare-rest-js/interfaces/types_add_email_dto.addemaildto.html)): Promise<any>
+
+- [addOrUpdateEmail](https://yasionfire.github.io/sare-rest-js/classes/main.sareclient.html#addorupdateemail)(`payload:` [AddEmailDTO](https://yasionfire.github.io/sare-rest-js/interfaces/types_add_email_dto.addemaildto.html)): `Promise<any>`
   - Adds/Updates email and props to SARE account
-- [getEmailData](https://yasionfire.github.io/sare-rest-js/classes/main.sareclient.html#getemaildata)(email: string): Promise<any>
+- [getEmailData](https://yasionfire.github.io/sare-rest-js/classes/main.sareclient.html#getemaildata)(`email: string`): `Promise<any>`
   - Retrieve email data from db
 
 ## Documentation
@@ -66,6 +67,7 @@ sareClient.addOrUpdateEmail({
 
 ### Resources
 - [Knowledge base](https://sare.pl/baza-wiedzy/)
+- [Documentation](https://yasionfire.github.io/sare-rest-js/)
 
 
 ---
